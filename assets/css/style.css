@@ -58,7 +58,8 @@ a{
 .nav_bar{
 	text-align: center;
 	height: 33px;
-	margin-top: 11px;
+	margin: 11px auto;
+	max-width: 900px;
 }
 
 .btn{
@@ -67,7 +68,7 @@ a{
 	background: transparent;
 	border: 0;
 	cursor: pointer;
-	border-bottom: 1px solid #dbdbdb;
+	border: 1px solid #dbdbdb;
 	transition: .5s;
 }
 
@@ -76,19 +77,10 @@ a{
 	border-bottom: 1px solid #000;
 }
 
-#giveUpBtn{
-	position: absolute;
-	margin-left: -37px;
-}
-
-#levelSelectBtn{
-	position: absolute;
-	margin-left: 77px;
-}
-
+#giveUpBtn,
+#levelSelectBtn,
 #difficultySelectBtn{
-	position: absolute;
-    margin-left: -162px;
+	margin: 0px 10px;
 }
 
 /*game*/
@@ -99,15 +91,15 @@ a{
 .row, .row_block{
 	display: flex;
 	justify-content: center;
-	margin: 5px;
+	margin: 2px;
 }
 
 .row_block{
-	font-size: 45px;
+	font-size: 40px;
     border: 1px solid;
-    width: 56px;
-    height: 51px;
-	border-radius: 12px;
+    width: 51px;
+    height: 44px;
+	border-radius: 6px;
 	transition: transform 1.6s;
 }
 
@@ -209,7 +201,7 @@ a{
 
 .modalBtn, .modalBtnL{
 	width: 100%;
-	font-size: 28px;
+	font-size: 24px;
 	cursor: pointer;
 }
 
@@ -218,7 +210,7 @@ a{
 }
 
 .modalBtnL{
-	padding: 87.5px;
+	padding: 40px;
 }
 
 .modalMessage{
@@ -320,7 +312,7 @@ a{
 
 .menuBtn{
 	width:100%;
-	padding: calc(6vh - 30px);
+	padding: 10px;
 	font-size: 35px;
 	cursor: pointer;
 }
